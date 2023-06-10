@@ -1,0 +1,26 @@
+#include"player.h"
+#include"def.h"
+Player::Player(int x,int y)
+{
+    this->x=x;
+    this->y=y;
+    restLife=10;
+    direction=0;
+    defDir=1;
+    moveSpeed=20/FRAME;
+    atackRange=2;
+    bombCountLimit=3;
+    bombCount=0;
+}
+Player::Player()
+{
+    this->x=0;
+    this->y=0;
+    restLife=10;
+    direction=0;
+    defDir=1;
+    moveSpeed=20/FRAME;
+    atackRange=2;
+    bombCountLimit=3;
+    bombCount=0;
+}
